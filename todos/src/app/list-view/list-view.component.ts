@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Todo} from '../models/todo';
 
 @Component({
   selector: 'app-list-view',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-view.component.scss']
 })
 export class ListViewComponent implements OnInit {
+  @Input() data: Todo[];
 
-  constructor() { }
+  displayedColumns: string[] = ['Name', 'Datum', 'Uhrzeit', 'Status'];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

@@ -5,21 +5,19 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {ListViewComponent} from './list-view/list-view.component';
 import {CreateTodoComponent} from './create-todo/create-todo.component';
-import {ListViewItemComponent} from './list-view/list-view-item/list-view-item/list-view-item.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListViewComponent,
-    CreateTodoComponent,
-    ListViewItemComponent
+    CreateTodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatListModule,
+    MatTableModule,
     BrowserAnimationsModule
   ],
   providers: [],
