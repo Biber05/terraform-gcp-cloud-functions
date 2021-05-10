@@ -1,6 +1,6 @@
 add deployment service user permissions
 ```shell script
- gcloud iam service-accounts add-iam-policy-binding deployment@ana-shopping-bie.iam.gserviceaccount.com --member=serviceAccount:deployment@ana-shopping-bie.iam.gserviceaccount.com --role=roles/iam.serviceAccountUser
+ gcloud iam service-accounts add-iam-policy-binding user@project.iam.gserviceaccount.com --member=serviceAccount:deployment@project.iam.gserviceaccount.com --role=roles/iam.serviceAccountUser
 ```
 
 plan infra
